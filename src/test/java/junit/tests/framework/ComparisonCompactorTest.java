@@ -27,7 +27,7 @@ public class ComparisonCompactorTest extends TestCase {
 
     public void testNoContextStartAndEndSame() {
         String failure = new ComparisonCompactor(0, "abc", "adc").compact(null);
-        assertEquals("expected:<...[b]...> but was:<...[d]...>", null);
+        assertEquals("expected:<...[b]...> but was:<...[d]...>", failure);
     }
 
     public void testStartAndEndContext() {
