@@ -10,7 +10,7 @@ public class FloatAssertTest extends TestCase {
      */
     public void testAssertEqualsNaNFails() {
         try {
-            assertEquals(1.234f, Float.NaN, 72);
+            assertEquals(1.234f, Float.NaN, 0.0);
             fail();
         } catch (AssertionFailedError e) {
         }
