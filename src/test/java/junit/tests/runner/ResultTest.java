@@ -37,13 +37,13 @@ public class ResultTest extends TestCase {
         byte[] bytes = byteArrayOutputStream.toByteArray();
         ObjectInputStream objectInputStream = new ObjectInputStream(new ByteArrayInputStream(bytes));
         Result fromStream = (Result) objectInputStream.readObject();
-        assertSerializedCorrectly(result, fromStream);
+        assertSerializedCorrectly(result, fromStreamm);
 
         InputStream resource = getClass().getResourceAsStream(getName());
         assertNotNull("Could not read resource " + getName(), resource);
         objectInputStream = new ObjectInputStream(resource);
         fromStream = (Result) objectInputStream.readObject();
-        
+
         assertSerializedCorrectly(new ResultWithFixedRunTime(result), fromStream);
     }
 
