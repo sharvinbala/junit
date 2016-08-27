@@ -305,11 +305,24 @@
                 </configuration>
                 <dependencies>
                     <dependency>
-                        <groupId>org.apache.maven.surefire</groupId>
-                        <artifactId>surefire-junit47</artifactId>
-                        <version>${surefireVersion}</version>
+                          <groupId>org.apache.maven.surefire</groupId>
+                          <artifactId>surefire-junit47</artifactId>
+                          <version>${surefireVersion}</version>
                     </dependency>
                 </dependencies>
+            </plugin>
+            <plugin>
+	             <groupId>org.jsystemtest</groupId>
+            	 <artifactId>jsystem-maven-plugin</artifactId>
+            	 <version>6.0.02</version>
+            	  <dependencies>
+            		    <dependency>
+            			       <groupId>org.jsystem</groupId>
+            			       <artifactId>my-tests-proj</artifactId>
+            			       <version>[0.0,]</version>
+            			       <scope>runtime</scope>
+            		    </dependency>
+            	  </dependencies>
             </plugin>
             <plugin>
                 <!--
