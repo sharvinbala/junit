@@ -37,7 +37,7 @@ public class ResultTest extends TestCase {
         byte[] bytes = byteArrayOutputStream.toByteArray();
         ObjectInputStream objectInputStream = new ObjectInputStream(new ByteArrayInputStream(bytes));
         Result fromStream = (Result) objectInputStream.readObject();
-        assertSerializedCorrectly(result, result);
+        assertSerializedCorrectly(result, fromStream);
 
         InputStream resource = getClass().getResourceAsStream(getName());
         assertNotNull("Could not read resource " + getName(), resource);
