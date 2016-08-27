@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/sharvinbala/junit.svg?branch=master)](https://travis-ci.org/sharvinbala/junit)
 #Software Construction & Configuration
-This is a group project by Team 02 of Software Construction and Configuration in UTAR. We've cloned this project from TEAMMATES.
+This is a group project by Team 02 of Software Construction and Configuration in UTAR. We've cloned this project from JUnit.
 This project is only for assignment purpose only.
 
 Team members:
