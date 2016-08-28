@@ -25,6 +25,8 @@ public class AllTests {
         suite.addTestSuite(ComparisonFailureTest.class);
         suite.addTestSuite(DoublePrecisionAssertTest.class);
         suite.addTestSuite(FloatAssertTest.class);
+        //new framework for testing
+        
         return suite;
     }
 
